@@ -43,7 +43,7 @@ object SQLTransactionDeduplicator {
         |   'scan.startup.mode' = 'earliest-offset'
         | );
         |""".stripMargin
-      tableEnv.executeSql(query).print()
+    tableEnv.executeSql(query).print()
   }
 
   def runTransactionDeduplicationQuery(): Unit = {
