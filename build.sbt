@@ -17,7 +17,11 @@ lazy val root = project
       "org.apache.flink" % "flink-json" % flinkVersion % "provided",
       "org.apache.flink" % "flink-statebackend-rocksdb" % flinkVersion % "provided",
       "org.apache.flink" % "flink-state-processor-api" % flinkVersion % "provided",
-      "org.apache.flink" % "flink-connector-kafka" % flinkVersion % "provided"
+      "org.apache.flink" % "flink-connector-kafka" % flinkVersion % "provided",
+      "dev.zio" %% "zio" % "2.0.15",
+      "dev.zio" %% "zio-streams" % "2.0.15",
+      "dev.zio" %% "zio-json" % "0.5.0",
+      "dev.zio" %% "zio-kafka" % "2.3.2"
     )
   )
 

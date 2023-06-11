@@ -5,6 +5,10 @@ Also, consider buying the book, it's great!
 
 See the book's repository: https://github.com/polyzos/stream-processing-with-apache-flink
 
+Notable differences:
+
+- Producers implement with ZIO (for my personal learning purposes)
+
 ## Setup environment
 
 Flink and Kafka cluster:
@@ -19,7 +23,11 @@ Setup topics:
 ./redpanda-setup.sh
 ```
 
-TODO: Run producers
+Run producers (can take few minutes to finish)
+
+```bash
+sbt "runMain com.github.tkasu.flinkbook.producers.TransactionsProducer"
+```
 
 
 ## Run local example
@@ -27,7 +35,7 @@ TODO: Run producers
 NOTE! These are not running in Flink cluster, but in local JVM.
 
 ```bash
-sbt run
+sbt "runMain com.github.tkasu.flinkbook.sql.SQLTransactionDeduplicator"
 ```
 
 
