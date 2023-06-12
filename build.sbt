@@ -21,7 +21,12 @@ lazy val root = project
       "dev.zio" %% "zio" % "2.0.15",
       "dev.zio" %% "zio-streams" % "2.0.15",
       "dev.zio" %% "zio-json" % "0.5.0",
-      "dev.zio" %% "zio-kafka" % "2.3.2"
+      "dev.zio" %% "zio-kafka" % "2.3.2",
+      "dev.zio" %% "zio-interop-cats" % "23.0.0.6",
+      "co.fs2" %% "fs2-core" % "3.7.0",
+      "co.fs2" %% "fs2-io" % "3.7.0",
+      "org.gnieh" %% "fs2-data-csv" % "1.7.1",
+      "org.gnieh" %% "fs2-data-csv-generic" % "1.7.1",
     )
   )
 
